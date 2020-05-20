@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by zsoca74 (http://jsbin.com/zehawod/5/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ludvig Zsolt</title>
+  <style id="jsbin-css">
+img {
+  height: 160px;
+  width: 125px;
+ 
+}
+h1, figcaption {
+  font-family: "Times New Roman"
+    
+    
+}
+
+</style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="head">
+      <div class="profile-image">
+        <img src="https://i.imgur.com/GbMNGyL.jpg">
+             
+      </div>
+      <div class="name-headline">
+        <h1>Ludvig Zsolt</h1>
+        <h2>Fűtésszerelő</h2>
+        <h3>Miskolc</h3>
+        <p> Jelenleg fürdőgépészként dolgozom.
+          Rengeteg szabadidőm van ezért jelentkeztem,
+          a Codeberry programozó iskolába. </p>
+        <section class="links">
+        <h2>Elérhetősségeim:</h2>
+        <ul>
+          <li><a href="https://facebook.com/#">Facebook</a></li>
+          
+        </ul> 
+          
+<script id="jsbin-javascript">
+function colorClock(){
+  var date = new Date();
+
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var seconds = date.getSeconds();
+
+  if (hours <= 9) {
+    hours = "0" + hours;
+  }
+  if (minutes <= 9) {
+    minutes = "0" + minutes;
+  }
+  if (seconds <= 9) {
+    seconds = "0" + seconds;
+  }
+
+  var clockFace = hours + ':' + minutes + ':' + seconds;
+  var hexColor = '#' + hours + minutes + seconds;
+
+  document.getElementById('clock').innerHTML = clockFace;
+  document.body.style.background = hexColor;
+
+  setTimeout(function() {
+    colorClock();
+  }, 1000);
+}
+
+colorClock();
+</script>
+</body>
+</html>
